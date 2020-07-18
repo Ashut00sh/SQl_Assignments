@@ -1,0 +1,48 @@
+
+NAME:- Ashutosh Jadhav
+ID:- 200240320024
+CEN:- Kharghar
+SQL EXERCISE
+
+=================================================================
+
+Q1)
+
+SELECT * FROM p
+ORDER BY City DESC;
+
+----------------------------------------------------------------
+
+Q2)
+
+SELECT * FROM p
+ORDER BY City,Pname;
+
+---------------------------------------------------------------
+
+Q3)
+select * from s where Status BETWEEN 10 AND 20;
+
+
+----------------------------------------------------------------
+Q4)
+
+SELECT Pname,Weight FROM p WHERE Weight BETWEEN 10 AND 15;
+
+-----------------------------------------------------------------
+Q5)
+SELECT * FROM p WHERE Pname LIKE'S%'; 
+
+--------------------------------------------------------------------
+
+Q6)
+
+SELECT * FROM s WHERE City LIKE 'L%';
+
+
+------------------------------------------------------------------------
+
+Q7)
+SELECT * FROM J WHERE Jname LIKE '__n%';
+
+

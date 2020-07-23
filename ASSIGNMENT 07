@@ -1,0 +1,27 @@
+NAME:- Ashutosh Jadhav
+ID:- 200240320024
+CEN:- Kharghar
+SQL ASSIGNMENT07
+====================================================================
+Q1)
+
+SELECT COUNT(Onum) FROM ORDERS WHERE Odate>"1990-10-03";
+--------------------------------------------------------------------
+Q2)
+SELECT COUNT(IFNULL(City,0))FROM CUSTOMERS;
+--------------------------------------------------------------------
+Q4)
+select * from CUSTOMERS WHERE Cname LIKE 'G%' ORDER BY Cname;
+-------------------------------------------------------------------
+Q3)
+select cnum, min(amt) from ORDERS GROUP BY cnum;
+select cname,MIN(amt) from CUSTOMERS,ORDERS WHERE CUSTOMERS.Cnum=ORDERS.Cnum GROUP BY cname order by 2;
+
+
+-------------------------------------------------------------------
+Q5)
+select City, max(Rating),City from CUSTOMERS group by city; 
+------------------------------------------------------------------
+Q6)
+select Odate,count(distinct(snum)) count from ORDERS GROUP BY Odate;
+

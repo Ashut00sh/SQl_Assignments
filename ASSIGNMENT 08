@@ -1,0 +1,22 @@
+NAME:- ASHUTOSH JADHAV
+ID:- 200240320024
+CEN:- KHARGHAR
+SUB:- ASSIGNMENT-08
+===================================================================
+Q1)
+
+ select onum,snum,amt,comm*0.12 from ORDERS;
+ ------------------------------------------------------------------
+Q2)
+
+ select city,max(rating)from CUSTOMERS GROUP BY city;
+--------------------------------------------------------------------
+Q3)
+
+select rating,cname,cnum from CUSTOMERS ORDER BY rating desc;
+
+-----------------------------------------------------------------------
+Q4)
+
+SELECT SUM(amt),odate from ORDERS group by odate order by odate desc;
+---------------------------------------------------------------------

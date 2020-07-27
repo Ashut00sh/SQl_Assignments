@@ -1,0 +1,15 @@
+NAME:- ASHUTOSH JADHAV
+ID:- 200240320024
+CEN:- KHARGHAR
+SUB:- ASSIGNMENT-15
+========================================================
+Q1)create table multicast as select * from customers where snum IN(select snum from 
+  customers group by snum having count(snum)>1);
+--------------------------------------------------------
+ Q2)
+ delete customers where cnum=ANY (select cnum from orders where cnum NOT IN
+   (select cnum from customers));
+--------------------------------------------------------
+Q3)
+ update salespeople set comm=comm*1.20 IN(select snum from orders where amt>3000);
+----------------------------------------------------- 

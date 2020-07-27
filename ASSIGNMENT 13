@@ -1,0 +1,17 @@
+NAME:- ASHUTOSH JADHAV
+ID:- 200240320024
+CEN:- KHARGHAR
+SUB:- ASSIGNMENT-13
+==============================================================
+Q1)
+
+ SELECT CNAME,CITY,RATING AS 'HIGH RATING'FROM CUSTOMERS WHERE RATING >=200 
+ UNION 
+ SELECT CNAME,CITY,RATING AS 'LOW RATING' FROM CUSTOMERS WHERE RATING <200;
+----------------------------------------------------------
+Q2)
+
+exit
+
+
+

@@ -1,0 +1,18 @@
+NAME:- ASHUTOSH JADHAV
+ID:- 200240320024
+CEN:- KHARGHAR
+SUB:- ASSIGNMENT-11
+=================================================================
+
+Q2)
+ select cname,rating from CUSTOMERS where cnum in (select cnum from ORDERS
+ where amt > (select avg(amt) from ORDERS));
+
+----------------------------------------------------------------
+Q1)
+select cnum,count(*) orders from orders where cnum = 
+(select cnum from customers where cname = 'Cisneros');
+
+----------------------------------------------------------------
+Q3)
+

@@ -3,8 +3,12 @@ ID:- 200240320024
 CEN:- KHARGHAR
 SUB:- ASSIGNMENT-15
 ========================================================
-Q1)create table multicast as select * from customers where snum IN(select snum from 
-  customers group by snum having count(snum)>1);
+Q1)  CREATE TABLE MULTICUST
+    -> AS
+    -> SELECT * FROM SALESPEOPLE 
+    -> WHERE SNUM IN
+    -> (SELECT SNUM FROM CUSTOMERS GROUP BY SNUM HAVING COUNT(SNUM)>1);
+
 --------------------------------------------------------
  Q2)
  delete customers where cnum=ANY (select cnum from orders where cnum NOT IN

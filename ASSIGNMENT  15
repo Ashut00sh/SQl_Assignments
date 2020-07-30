@@ -4,10 +4,10 @@ CEN:- KHARGHAR
 SUB:- ASSIGNMENT-15
 ========================================================
 Q1)  CREATE TABLE MULTICUST
-    -> AS
-    -> SELECT * FROM SALESPEOPLE 
-    -> WHERE SNUM IN
-    -> (SELECT SNUM FROM CUSTOMERS GROUP BY SNUM HAVING COUNT(SNUM)>1);
+     AS
+     SELECT * FROM SALESPEOPLE 
+     WHERE SNUM IN
+     (SELECT SNUM FROM CUSTOMERS GROUP BY SNUM HAVING COUNT(SNUM)>1);
 
 --------------------------------------------------------
  Q2)

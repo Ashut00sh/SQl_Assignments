@@ -1,0 +1,31 @@
+NAME:- ASHUTOSH JADHAV
+ID:- 200240320024
+CEN:- KHARGHAR
+SUB:- ASSIGNMENT-13
+==============================================================
+Q1)
+
+ SELECT CNAME,CITY,RATING AS 'HIGH RATING'FROM CUSTOMERS WHERE RATING >=200 
+ UNION 
+ SELECT CNAME,CITY,RATING AS 'LOW RATING' FROM CUSTOMERS WHERE RATING <200;
+----------------------------------------------------------
+Q2)
+Select Snum, Sname from Salespeople s 
+where 1 < 
+(Select Count(*) from Orders o
+ where o.Snum = s.Snum)
+	union
+Select Cnum, Cname from Customers c 
+where  1 < (Select count(*) From Orders o 
+where o.Cnum = c.Cnum) 
+order by 2;
+---------------------------------------------------------
+Q3)
+SELECT SNUM FROM SALESPEOPLE WHERE CITY='SAN JOSE'
+    UNION
+    SELECT CNUM FROM CUSTOMERS WHERE CITY='SAN JOSE'
+    UNION 
+    SELECT ONUM FROM ORDERS WHERE ODATE=1990-10-03;
+--------------------------------------------------------
+
+

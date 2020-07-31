@@ -1,0 +1,51 @@
+NAME:- ASHUTOSH JADHAV
+ID:- 200240320024
+CEN:- KHARGHAR
+SUB:- ASSIGNMENT-20
+==========================================================
+Q1)
+Create View Dailyorders
+as Select Distinct cnum, snum, onum, odate from Orders;
+-> updatacble dml opearations.
+-----------------------------------------------------------
+Qii)
+Create View Custotals
+as Select cname, Sum (amt) Sum_Amt from Orders, Customers
+where Orders.cnum=Customers.cnum Group by cname;
+-> not allowed because in select statement there is group function
+-----------------------------------------------------------
+Qiii)
+Create view Thirdorders
+as Select * from Dailyorders where odate=1990-10-03;
+-> yes allowed
+-----------------------------------------------------------
+Qiv)
+Create view Nullcities
+as Select snum, sname, city
+from Salespeople
+where city is NULL
+OR sname BETWEEN ‘A’ and ‘MZ’;
+=> yes allow
+----------------------------------------------------------
+Q2)
+create view Commissions 
+as 
+
+select snum,comm 
+from salespeople
+where comm between  0.10 and 0.20 with check option;
+----------------------------------------------------------
+Q3)
+create table orders
+(
+onum int(4),
+odate datetime
+);
+
+create view Entryorders 
+as
+select * from orders;
+
+insert into orders(onum,odate) values(1,sysdate());
+----------------------------------------------------------
+

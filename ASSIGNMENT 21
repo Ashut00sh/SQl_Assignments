@@ -1,0 +1,34 @@
+NAME:- ASHUTOSH JADHAV
+ID:- 200240320024
+CEN:- KHARGHAR
+SUB:- ASSIGNMENT-21
+===========================================================
+Q1)
+grant update on customer to Amit;
+-----------------------------------------------------------
+Q2)
+grant select on Orders to Manoj with grant options;
+
+grant select on Manoj.Orders to Rahul;
+-----------------------------------------------------------
+Q3)
+Take the INSERT privilege on Salespeople away from Ajita.
+
+revoke insert on salespeople from Ajita;
+-----------------------------------------------------------
+Q4)
+create view rating_range 
+as
+select * from customer
+where rating between 100 and 500 with check option;
+
+grant insert,update on rating_range to Abhijeet; 
+-----------------------------------------------------------
+Q5)
+create view rating_lowest
+as
+select * from customer
+where rating not in
+(select min(rating) from customer) with check option;
+
+grant select on rating_lowest to Vikram;
